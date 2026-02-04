@@ -1,4 +1,4 @@
-f## Colección de Videojuegos
+## Colección de Videojuegos
 
 Aplicación web completa para gestionar una colección personal de videojuegos.
 Incluye control de acceso (login/logout), operaciones CRUD sobre los juegos y
