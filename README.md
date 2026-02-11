@@ -102,3 +102,25 @@ servidor compilado.
   - `styles.css`: estilos adicionales.
   - `app.js`: lógica de frontend, llamadas a la API y manejo de UI.
 - `data/database.sqlite`: archivo de base de datos (se genera automáticamente).
+
+---
+
+## Actualizaciones
+
+### 11 de febrero de 2026
+
+#### Mejoras de diseño y experiencia de usuario
+- Reorganizado el layout principal: ahora el formulario para añadir juegos aparece en una barra lateral fija a la izquierda, mientras que la colección ocupa mayor espacio en el área principal. Esto mejora la visibilidad de los juegos y facilita el acceso al formulario.
+- Implementado un modal de confirmación con Bootstrap para eliminar juegos, reemplazando el cuadro de diálogo nativo del navegador por una interfaz más elegante y consistente con el diseño general.
+
+#### Favoritos
+- Añadida funcionalidad de favoritos: ahora puedes marcar juegos como favoritos (★) y filtrar tu colección para ver solo tus juegos favoritos. Los favoritos se guardan en localStorage por usuario.
+- Añadidos botones "★ Favoritos" y "Todos" para alternar fácilmente entre vistas.
+
+#### Optimización del código
+- Optimizado el archivo CSS eliminando estilos no utilizados (reducción del ~30% del código).
+- Mejorado el rendimiento de JavaScript reduciendo búsquedas redundantes del DOM.
+- Limpieza general del código para mejorar la mantenibilidad.
+
+#### Visualización de juegos
+- Cambiado el formato de visualización de tablas a tarjetas (cards) con diseño en cuadrícula, ofreciendo una interfaz más moderna y visual para mostrar la colección de videojuegos.

@@ -4,7 +4,7 @@ import fs from "fs";
 
 const DB_FILE = path.join(__dirname, "..", "data", "database.sqlite");
 
-// Asegurarse de que exista la carpeta de datos
+// crear carpeta data si no existe
 const dataDir = path.dirname(DB_FILE);
 if (!fs.existsSync(dataDir)) {
   fs.mkdirSync(dataDir, { recursive: true });
@@ -12,7 +12,7 @@ if (!fs.existsSync(dataDir)) {
 
 const db = new Database(DB_FILE);
 
-// Crear tablas si no existen
+// tablas de la base de datos
 db.exec(`
   CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,

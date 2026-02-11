@@ -21,11 +21,11 @@ app.use(createSessionMiddleware());
 app.use("/api/auth", authRouter);
 app.use("/api/games", gamesRouter);
 
-// Servir frontend estático
+// Archivos estaticos del frontend
 const publicDir = path.join(__dirname, "..", "public");
 app.use(express.static(publicDir));
 
-// Ruta principal para la SPA
+// Pagina principal
 app.get("/", (req, res) => {
   res.sendFile(path.join(publicDir, "index.html"));
 });

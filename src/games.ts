@@ -32,7 +32,7 @@ gamesRouter.get("/", (req, res) => {
   res.json(games);
 });
 
-// Crear videojuego
+// Crear juego nuevo
 gamesRouter.post("/", (req, res) => {
   const userId = req.session.userId!;
   const { title, platform, genre, status } = req.body;
@@ -58,7 +58,7 @@ gamesRouter.post("/", (req, res) => {
   res.status(201).json(game);
 });
 
-// Editar videojuego
+// Editar un juego
 gamesRouter.put("/:id", (req, res) => {
   const userId = req.session.userId!;
   const { id } = req.params;

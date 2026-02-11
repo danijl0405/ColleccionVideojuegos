@@ -12,7 +12,7 @@ declare module "express-session" {
 
 export const authRouter = express.Router();
 
-// Registrar nuevo usuario (opcional, para desarrollo)
+// registro de usuarios
 authRouter.post("/register", (req, res) => {
   const { username, password } = req.body;
   if (!username || !password) {
